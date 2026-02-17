@@ -1,0 +1,28 @@
+{
+  "name": "cf-ai-edgescope-backend",
+  "version": "1.0.0",
+  "description": "Real-time Edge Traffic Intelligence Dashboard - Cloudflare Workers Backend",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "edge-computing",
+    "ai",
+    "observability",
+    "monitoring"
+  ],
+  "author": "Ryan Lyn",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.3.0",
+    "wrangler": "^4.65.0"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}

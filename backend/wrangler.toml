@@ -1,0 +1,17 @@
+name = "cf-ai-edgescope"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Bindings for Workers AI
+[ai]
+binding = "AI"
+remote = true
+
+# KV Namespace for chat history
+[[kv_namespaces]]
+binding = "CHAT_HISTORY"
+id = "YOUR_KV_NAMESPACE_ID"  # Replace with actual KV namespace ID after creation
+
+# CORS configuration for local development
+[dev]
+port = 8787
